@@ -19,6 +19,8 @@ def check_winner(board, player):
         return True
 
     return False
+def is_board_full(board):
+    return all(cell != ' ' for row in board for cell in row)
 
 
 
